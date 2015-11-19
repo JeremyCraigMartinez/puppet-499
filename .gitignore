@@ -1,1 +1,6 @@
 modules/firewall
+modules/concat
+modules/monitor
+modules/puppi
+modules/stdlib
+modules/fail2ban
