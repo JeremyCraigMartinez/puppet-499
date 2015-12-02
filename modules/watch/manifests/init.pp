@@ -1,5 +1,5 @@
 class watch {
-	file { '/usr/local/bin/watch.sh':
+	/*file { '/usr/local/bin/watch.sh':
 		content => "#!/bin/sh\necho \"Hello World\"\ncat /var/log/syslog > /tmp/syslog",
 		owner => 'vagrant',
 		group => 'vagrant',
@@ -12,5 +12,5 @@ class watch {
 		hour    => '*',   
 		minute  => '*',
 		require => File['/usr/local/bin/watch.sh']
-	}
+	}*/
 }

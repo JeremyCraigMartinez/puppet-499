@@ -3,7 +3,7 @@
   # Default firewall rules
   firewall { '000 accept all icmp':
     proto   => 'icmp',
-    action  => 'accept',
+    action  => 'drop',
   }
 
   firewall { '001 accept all to lo interface':
@@ -21,6 +21,13 @@
   # Allow SSH
   firewall { '100 allow ssh access':
     dport   => '22',
+    proto  => tcp,
+    action => accept,
+  }
+
+  # Allow SMTP
+  firewall { '100 allow SMTP access':
+    dport   => '25',
     proto  => tcp,
     action => accept,
   }
