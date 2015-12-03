@@ -56,7 +56,7 @@ node 'pnode1' {
   	}
 	}
 
-	include watch
-
 	include apt
+
+	include watch
 }

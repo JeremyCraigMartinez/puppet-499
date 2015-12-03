@@ -9,7 +9,12 @@ class apt {
 		require  => Exec['apt-get update'],
 	}
 
-	package { "sendEmail":
+	package { "mailutils":
+		ensure  => latest,
+		require  => Exec['apt-get update'],
+	}
+
+	package { "ssmtp":
 		ensure  => latest,
 		require  => Exec['apt-get update'],
 	}

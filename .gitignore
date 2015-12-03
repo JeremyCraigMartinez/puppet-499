@@ -6,4 +6,3 @@ modules/stdlib
 modules/fail2ban
 modules/ssh
 modules/sudo
-
