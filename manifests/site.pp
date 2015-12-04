@@ -58,5 +58,7 @@ node 'pnode1' {
 
 	include apt
 
-	include watch
+	include syslog
+
+	include path
 }
